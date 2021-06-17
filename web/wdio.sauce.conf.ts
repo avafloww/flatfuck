@@ -1,6 +1,6 @@
-import { config } from './wdio.shared.conf.ts';
+import { config } from './wdio.shared.conf.ts'
 
-const BUILD_ID = Math.ceil(Date.now() / 1000);
+const BUILD_ID = Math.ceil(Date.now() / 1000)
 
 exports.config = {
   /**
@@ -16,14 +16,14 @@ exports.config = {
   headless: process.argv.includes('--headless'),
 
   services: [
-    [ 'sauce', {
+    ['sauce', {
       sauceConnect: true,
       tunnelIdentifier: 'Vue.js Integration tests'
-    } ]
+    }]
   ],
 
   maxInstances: 10,
-  capabilities: [ {
+  capabilities: [{
     browserName: 'firefox',
     browserVersion: 'latest',
     platformName: 'Windows 10',
@@ -37,5 +37,5 @@ exports.config = {
     'sauce:options': {
       build: `Build ${BUILD_ID}`
     }
-  } ]
-};
+  }]
+}

@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-const path = require('path');
+const path = require('path')
 
 exports.config = {
   // ==================
@@ -16,8 +16,8 @@ exports.config = {
   ],
   // Patterns to exclude.
   exclude: [
-    // 'test/spec/multibrowser/**',
-    // 'test/spec/mobile/**'
+      // 'test/spec/multibrowser/**',
+      // 'test/spec/mobile/**'
   ],
   //
   // ===================
@@ -55,7 +55,7 @@ exports.config = {
   // Test reporter for stdout.
   // The only one supported by default is 'dot'
   // see also: https://webdriver.io/docs/dot-reporter.html
-  reporters: [ 'spec' ],
+  reporters: ['spec'],
   //
   // Options to be passed to Mocha.
   // See the full list at http://mochajs.org/
@@ -189,11 +189,11 @@ exports.config = {
   onComplete: function (exitCode, config, capabilities, results) {
   },
   /**
-   * Gets executed when a refresh happens.
-   * @param {String} oldSessionId session ID of the old session
-   * @param {String} newSessionId session ID of the new session
-   */
-  onReload: function (oldSessionId, newSessionId) {
+  * Gets executed when a refresh happens.
+  * @param {String} oldSessionId session ID of the old session
+  * @param {String} newSessionId session ID of the new session
+  */
+  onReload: function(oldSessionId, newSessionId) {
   },
   //
   // Cucumber specific hooks
@@ -209,4 +209,4 @@ exports.config = {
   },
   afterFeature: function (uri, feature, scenarios) {
   }
-};
+}
